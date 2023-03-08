@@ -1,0 +1,147 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body, .container, .page {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+}
+
+.page {
+    background-image: linear-gradient(180deg, #1D2939 0%, #667085 100%);
+    min-height: 100%;
+}
+.header {
+    display: grid;
+    grid-template: repeat(2, auto) / 100%;
+    padding: 30px 24px;
+}
+.logo {
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 29px;
+    position: relative;
+}
+.nav-toggle {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 4px; 
+}
+.cta {
+    display: none;
+}
+.actions {
+    grid-row: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    gap: 12px;
+}
+.actions-btn {
+    background: grey;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 14px;
+    transition: background 0.3s ease-in;
+}
+.actions-btn:hover,
+.actions-btn:hover path,
+.actions-btn:hover rect {
+    background: white;
+    stroke: #fff;
+    transition: background 0.3s ease-in, stroke 0.3s ease-in;
+}
+.actions-btn:hover path,
+.actions-btn:hover rect {
+    stroke: #9E77ED;
+    transition: stroke 0.3s ease-in;
+}
+
+.cta-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 0 none;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Satoshi-Bold';
+    padding: 8px 12px;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+}
+.cta-btn-signup {
+    background: #6941C6;
+}
+.cta-btn-login:hover {
+    background: white;
+    color: #101828;
+    transition: all 0.3s linear;
+
+}
+.cta-btn-signup:hover {
+    background: #9E77ED;
+    transition: all 0.3s linear;
+
+}
+
+/* drawer styling for mobile only */
+.drawer {
+    background: #101828;
+    height: 100vh;
+    right: -100%;
+    padding: 48px 40px 0;
+    position: fixed;
+    top:0;
+    transition: right 0.3s ease-in;
+    width: 340px;
+}
+.drawer.open {
+    transition: right 0.3s ease-in;
+    right: 0;
+}
+.drawer-logo {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 38px;
+    position: relative;
+    width: 100%;
+}
+.drawer-close {
+    cursor: pointer;
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 7px;
+}
+.drawer-cta > .cta-btn {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin: 0 0 12px;
+}
+
+/* end drawer styling */
+
+@media (min-width: 767px) {
+    .header {
+        display: grid;
+        grid-template-columns: 135px 1fr auto;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 21px 30px;
+    }
+    .logo, .actions { grid-row: 1; margin: 0;}
+    .nav-toggle {
+        display: none;
+    }
+    .cta {
+        display: block;
+    }
+}
