@@ -15,7 +15,7 @@ body {
 
 .page {
     background-image: linear-gradient(180deg, #1D2939 0%, #667085 100%);
-    min-height: 100%;
+    height: 2165px;
 }
 .header {
     display: grid;
@@ -35,9 +35,7 @@ body {
     right: 0;
     top: 4px; 
 }
-.cta {
-    display: none;
-}
+
 .actions {
     grid-row: 2;
     display: flex;
@@ -64,7 +62,9 @@ body {
     stroke: #9E77ED;
     transition: stroke 0.3s ease-in;
 }
-
+.cta {
+    display: none;
+}
 .cta-btn {
     background: rgba(255, 255, 255, 0.1);
     border: 0 none;
@@ -128,6 +128,114 @@ body {
 
 /* end drawer styling */
 
+/* card section styling */
+.cards-hdr {
+    color: #fff;
+    font-family: 'Satoshi-Bold';
+    font-size: clamp(32px, 5vw, 50px);
+    margin: 10px 0 40px;
+    text-align: center;
+}
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0 auto 20px;
+    max-width: 342px;
+}
+.card-hdr {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 4px 4px 0 0;
+    color: #fff;
+    font-family: 'Satoshi-Bold';
+    padding: 8px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.card-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 190px;
+}
+.card-price-text {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-family: 'Satoshi-Bold';
+    font-size: 56px;
+    text-align: center;
+}
+.card-price-info {
+    font-size: 12px;
+    padding: 0 0 0 13px;
+    text-align: left;
+}
+.card-price-alt {
+    border: 1px solid #475467;
+    border-radius: 15px;
+    color: #fff;
+    font-family: 'Satoshi-Medium';
+    margin: 16px auto 0;
+    padding: 8px;
+    text-align: center;
+    width: 181px;
+}
+.card-features {
+    background:rgba(255, 255, 255, 0.15);
+    padding: 16px 43px;
+}
+.card-features-list {
+    list-style-type: none;
+}
+.card-features-item {
+    color: #fff;
+    display: flex;
+    margin: 0 0 17px;
+    font-family: 'Satoshi-Bold';
+    font-size: 14px;
+}
+.card-features-item span {
+    padding-left: 10px;
+}
+.card-features-spacer hr {
+    color: rgba(255, 255, 255, 0.25);
+    display: block;
+    margin: 0 0 17px;
+}
+.card-footer {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 16px 43px;
+}
+.card-footer-btn {
+    background: #6941C6;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: 'Satoshi-Bold';
+    padding: 12px 75px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease-in;
+}
+.card-footer-btn:hover {
+    background: #9E77ED;
+    transition: background 0.3s ease-in;
+}
+.donation-icon {
+    display: block;
+    margin: 0 auto 9px;
+}
+.donation-text {
+    color: #fff;
+    font-family: 'Satoshi-Regular';
+    font-size: 14px;
+    line-height: 19px;
+    margin: 33px auto 0;
+    text-align: center;
+    width: 342px;
+}
+/* end card section styling */
+
 @media (min-width: 767px) {
     .header {
         display: grid;
@@ -143,5 +251,52 @@ body {
     }
     .cta {
         display: block;
+    }
+}
+
+@media (min-width: 1023px) {
+    .header {
+        padding: 21px 58px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .cards {
+        column-gap: 20px;
+        display: grid;
+        grid-template: repeat(2, min-content) / repeat(3, 1fr);
+        margin: 0 auto;
+        max-width: 1024px;
+        padding: 0 58px 0 59px;
+    }
+    .cards-hdr {
+        grid-row: 1;
+        grid-column: 1 / 4;
+        margin: 26px 0 36px;
+    }
+    .card {
+        margin: 0;
+    }
+    .card:nth-of-type(1) .card-features, 
+    .card:nth-of-type(2) .card-features {
+        padding: 32px 16px 57px;
+    }
+    .card-price-text.alt {
+        margin-top: -60px;
+    }
+    .card-features {
+        padding: 32px 16px 20px;
+    }
+    .card-footer {
+        padding: 16px;
+    }
+    .donation-icon {
+        display: inline;
+        margin: 0 5px 0 0;
+    }
+    .donation-text {
+        display: flex;
+        justify-content: center;
+        grid-column: 1 / 4;
+        width: 100%;
     }
 }
