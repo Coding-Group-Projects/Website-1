@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* html{
+    background-color: pink;
+} */
+
+body{
+    min-height: 1000vh;
+    background-color: #1D2939;
+    color: white;
+    /* background-color: yellow; */
+    
+}
+
+/* header{
+  text-align: center;
+} */
+
+.logo-icons{
+   
+    text-align: center;
+    margin: 37px 0 0;
+    /* background-color: yellow; */
+}
+
+ .logo-image{
+    position: relative;
+    display: inline-block;
+    /* background-color: blue; */
+    height: 27px;
+} 
+
+.logo-navbar{
+    position: absolute;
+    display: inline-block;
+    /* background-color: green; */
+    left: 205px;
+    top: 5px;
+}
+
+.logo-svgs {
+    display: flex;
+    justify-content: space-between;
+    width: 346px;
+    /* background-color: green; */
+    margin: 0 auto;
+}
+
+.logo-svgs-icons{
+    /* height: 58px; */
+    width: 58px;
+    padding: 14px;
+    background-color: #0b2d58;
+    border-radius: 5px;
+    margin: 40px 13px 40px 0;
+}
+
+a {
+    display: inline-block;
+}
+
+
+.drawer{
+    display: none;
+    position: fixed;
+    background-color: #1D2939;
+    height:844px;
+    width:350px;
+    margin:0px auto;
+    top: 0;
+    right: 50%;
+    margin-right: -175px;
+    z-index: 99;
+}
+
+.drawer-icons{
+    /* background-color: blue; */
+    margin: 48px 0 54px 40px;
+    /* padding: 10px; */
+    width: auto;
+}
+
+.drawer-icon{
+    display: inline-block;
+}
+
+.drawer-close-icon{
+    position: absolute;
+    /* background-color: yellow; */
+    line-height: auto;
+    margin: 5px 0 0 0;
+}
+
+.drawer-Whimzical-icon{
+    margin: 0 0 0 63px;
+}
+
+.button-1{
+    background-color: #667085;
+    ;
+}
+
+.button-2{
+    background-color: #6941C6;
+    ;
+}
+
+.button-1:hover{
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.button-2:hover{
+    background-color: #9E77ED;
+    color: white;
+}
+
+
+
+
+
+
+/** Price Section**/
+
+.price-header{
+   text-align: center;
+   margin: 0 0 20px;
+   font-size: 32px;
+}
+
+/* .price-list{
+    background-color: blue;
+    
+} */
+
+.price-list-items{
+    height:450px ;
+    width: 342px;
+    background-color: gray;
+    margin:0 auto 20px;
+    border-radius: 4px;
+}
+
+.price-list-header {
+    text-align: center;  
+    height: 38px;
+    /* padding: 8px 0 8px; */
+    /* vertical-align: middle; */
+    line-height: 38px;
+    /* background-color: yellow; */
+    font-size: 16px;
+}
+
+
+.price-tag{
+    background-color: darkslategray;
+    text-align: center;
+    height: 190px;
+    line-height: 190px;
+    font-size: 56px;
+}
+
+ul {
+    /* background-color: green; */
+    list-style-type: none;
+    margin: 16px 0;
+    height: 136px;
+}
+
+.list-head-3{
+    height: 510px;
+}
+
+.last-list{
+    /* background-color: green; */
+    list-style-type: none;
+    margin: 16px 0;
+    height: 195px;
+}
+
+ul li{
+    margin:0  71px 10px;
+    height: 20px;
+    width: 257px;
+    list-style-type: none;
+    font-size: 14px;
+    /* background-color: green; */
+}
+
+button{
+    margin: 0px  43px 16px;
+    height: 40px;
+    width: 257px;
+    background-color: #6941C6;
+    border-radius: 4px;
+    border-style: none;
+    padding: 8px 12px;
+    color: white;
+    font-size: 16px;
+}
+
+.price-text{
+    display: inline-block;
+    position: absolute;
+    font-size: 10px;
+    height: 28px ;
+    width: 87px;
+    /* overflow-wrap: break-word; */
+    /* background-color: blue; */
+    line-height: 1.5;
+    text-align: left;
+    margin: 81px 0 0 13px;
+ 
+}
